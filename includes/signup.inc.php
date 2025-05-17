@@ -17,4 +17,5 @@
     $signup->signupUser($uid,$pwd,$email);
 
     //Going to back to front page
+    header("location: ../index.php?error=none");
  }
