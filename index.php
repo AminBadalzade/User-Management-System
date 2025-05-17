@@ -6,13 +6,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+  <header>
+    <div>
+      <h4>Amin Badalzade</h4>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT US</a>
+      </nav>
+    </div>
+
+    <div>
+      <button href="#">SIGN UP</button>
+      <button href="#">LOGIN</button>
+    </div>
+  </header>
+
+    <main>
     <div class = "index-login-signup">
         <p>Let's create an account for our application</p>
         <form action="includes/signup.inc.php">
             <input type="text" name = "uid" placeholder = "Username">
             <input type="password" name= "pwd" placeholder="Password">
             <input type="password" name= "pwdRepeat" placeholder="Repeat Password">
+            <input type="text" name="email" placeholder = "Email">
             <br>
             <button type="submit" name="submit">SIGN UP</button>
         </form>
@@ -28,5 +46,7 @@
     </form>
 
     </div>
+    </main>
+    
 </body>
 </html>

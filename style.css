@@ -2,56 +2,187 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo / Site Name */
+header h4 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links Container */
+header nav {
+    display: flex;
+    gap: 25px;
+    margin-left: 40px;
+     margin-left: 0;
+     padding-left: 0;
+}
+
+
+
+
+/* Navigation Links */
+header nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+/* Hover Underline Animation */
+header nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header nav a:hover {
+    color: #0056b3;
+}
+
+header > div:last-child button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+header > div:last-child button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+header > div:last-child button:active {
+    background-color: #004a99;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Container Styling */
 .index-login-signup {
     background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 30px;
-    margin: 15px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 50px 35px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.index-login-signup:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Paragraph Styling */
 .index-login-signup p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #222;
 }
 
 /* Input Field Styling */
 .index-login-signup input[type="text"],
 .index-login-signup input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-login-signup input[type="text"]:focus,
+.index-login-signup input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+    outline: none;
 }
 
 /* Button Styling */
 .index-login-signup button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .index-login-signup button:hover {
     background-color: #0056b3;
+    transform: scale(1.02);
 }
+
+.index-login-signup button:active {
+    background-color: #004a99;
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
