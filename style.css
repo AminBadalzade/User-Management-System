@@ -74,7 +74,7 @@ header nav a:hover {
     color: #0056b3;
 }
 
-header > div:last-child button {
+header > div:last-child a {
     background-color: #007BFF;
     border: none;
     border-radius: 8px;
@@ -92,12 +92,12 @@ header > div:last-child button {
     cursor: pointer;
 }
 
-header > div:last-child button:hover {
+header > div:last-child a:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
 }
 
-header > div:last-child button:active {
+header > div:last-child a:active {
     background-color: #004a99;
     transform: translateY(0);
     box-shadow: none;
