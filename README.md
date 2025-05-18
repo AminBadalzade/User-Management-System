@@ -31,7 +31,10 @@ A simple yet secure **Login and Signup system** built with **PHP** and **MySQL**
 ---
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/14481786-5a0c-4ad8-b302-f7ff89884b08)
-![image](https://github.com/user-attachments/assets/d11e52c2-2ea3-44c6-85e5-e52c61366dd5)
+![1](https://github.com/user-attachments/assets/2dc73b77-9615-4112-92ee-673653b4c463)
+After logging into website:
+![2](https://github.com/user-attachments/assets/ce830b03-4759-412b-bbc9-607c264fd8d1)
+
+
 
 
