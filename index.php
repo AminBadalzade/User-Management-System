@@ -1,7 +1,4 @@
-<?php
-session_start();
-
-?>
+<?php include_once "session.config.php"; ?>
 
 
 <!DOCTYPE html>
@@ -56,8 +53,8 @@ session_start();
     <div class = "index-login-signup">
     <p>LOGIN</p>
     <form action="includes/login.inc.php" method="post">
-        <input type="text" name="uid" placeholder = "Username" required>
-        <input type="password" name= "pwd" placeholder="Password" required>
+        <input type="text" name="uid" placeholder = "Username" autocomplete="username" required>
+        <input type="password" name= "pwd" placeholder="Password" autocomplete="current-password" required>
         <br>
         <button type = "submit" name ="submit">LOGIN</button>
     </form>

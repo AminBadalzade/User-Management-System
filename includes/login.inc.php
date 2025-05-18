@@ -16,5 +16,5 @@
     $login->loginUser($uid,$pwd);
 
     //Going to back to front page
-    header("location: ../index.php?error=none");
+    header("location: ../login.php?error=none");
  }
