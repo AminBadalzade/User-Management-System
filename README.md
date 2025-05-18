@@ -32,7 +32,7 @@ A simple yet secure **Login and Signup system** built with **PHP** and **MySQL**
 
 ## 📸 Screenshots
 ![1](https://github.com/user-attachments/assets/2dc73b77-9615-4112-92ee-673653b4c463)
-After logging into website:
+### **After logging into website:**
 ![2](https://github.com/user-attachments/assets/ce830b03-4759-412b-bbc9-607c264fd8d1)
 
 
