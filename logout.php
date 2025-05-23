@@ -1,4 +1,5 @@
 <?php
+// Setting secure session cookie parameters before starting the session
 session_set_cookie_params([
   'lifetime' => 0,
   'path' => '/',
@@ -7,8 +8,11 @@ session_set_cookie_params([
   'httponly' => true,    // Prevents JavaScript access
   'samesite' => 'Strict' // Helps prevent CSRF
 ]);
+
 session_start();
 session_unset();
 session_destroy();
-header("Location: index.php");
+// Redirect to homepage or login page after clicking logout
+header("Location: index.php"); 
+
 exit();
