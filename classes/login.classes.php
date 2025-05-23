@@ -20,7 +20,7 @@
             exit();
         }
 
-        // Fetching user data as an associative array
+        // Fetching user data as an Associative array
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         $stmt = null;
 
