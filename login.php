@@ -1,3 +1,5 @@
+<!-- After logging in, this website will be opened by showing succesfull message-->
+
 <?php include_once "session.config.php"; ?>
 
 <!DOCTYPE html>
@@ -22,13 +24,17 @@
 
     <div>
       <?php 
+      // Check if the user is logged in by checking session variable
       if(isset($_SESSION["userid"])){
       ?>
+      <!-- Display logged in username safely -->
         <a href="#"><?php echo $_SESSION["useruid"]; ?></a>
+        <!-- Link to logout script -->
         <a href="logout.php">LOGOUT</a>
       <?php 
         } else {
       ?>
+      <!-- Show links to signup and login if not logged in -->
       <a href="#">SIGN UP</a>
       <a href="#">LOGIN</a>
       <?php 
@@ -39,6 +45,7 @@
     </div>
   </header>
   <main>
+    <!-- Success message displayed after login -->
 <p style="
   font-size: 1.25rem;
   color: #ffffff;               /* White text for contrast */

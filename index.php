@@ -22,13 +22,16 @@
 
     <div>
       <?php 
+      // Checking if a user session exists (user is logged in)
       if(isset($_SESSION["userid"])){
       ?>
+      <!-- I show username and a logout link if logged in -->
         <a href="#"><?php echo $_SESSION["useruid"]; ?></a>
         <a href="logout.php">LOGOUT</a>
       <?php 
         } else {
       ?>
+      <!-- I show signup and login links if not logged in -->
       <a href="#">SIGN UP</a>
       <a href="#">LOGIN</a>
       <?php 
@@ -38,6 +41,7 @@
   </header>
 
     <main>
+      <!-- Signup form -->
     <div class = "index-login-signup">
         <p>Let's create an account for our application</p>
         <form action="includes/signup.inc.php" method="post">
@@ -49,7 +53,7 @@
             <button type="submit" name="submit">SIGN UP</button>
         </form>
     </div>
-
+      <!-- Login form -->
     <div class = "index-login-signup">
     <p>LOGIN</p>
     <form action="includes/login.inc.php" method="post">
